@@ -1,0 +1,14 @@
+version: 2
+
+
+models:
+  - name: RawEmployee
+    description: "Employee DBT model"
+
+
+sources:
+  - name: employee
+    database: DBT_DATABASE
+    schema: DBT_SCHEMA
+    tables:
+      - name: EMPLOYEE_RAW
