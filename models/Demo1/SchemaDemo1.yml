@@ -2,12 +2,12 @@ version: 2
 
 
 models:
-  - name: RawEmployee
+  - name: RawEmployee # Name of Model File # 
     description: "Employee DBT model"
 
 
 sources:
-  - name: employee
+  - name: SourceEmployeeRaw # Configurable Source Name to reuse external DB #
     database: DBT_DATABASE
     schema: DBT_SCHEMA
     tables:
