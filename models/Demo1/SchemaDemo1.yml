@@ -4,6 +4,19 @@ version: 2
 models:
   - name: RawEmployee # Name of Model File to apply governance layer # 
     description: "Employee DBT model"
+    columns:
+      - name: emp_id
+        data_tests:
+          - unique
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['1','2','3','4','5']
+                config:
+                  severity: warn
+      - name: emp_salary
+        data_tests:
+          - salary_check # Name of test is definied in the SQL file # 
 
 
 sources:
@@ -12,3 +25,11 @@ sources:
     schema: DBT_SCHEMA
     tables:
       - name: EMPLOYEE_RAW
+      - name: CUSTOMER_SRC
+      - name: SALES_SRC
+      - name: PRODUCT_SRC
+      - name: PURCHASE_SRC
+      - name: BASE_ORDERS
+      - name: PATIENT_SRC
+      - name: SESSION_SRC
+      
