@@ -30,4 +30,6 @@ sources:
       - name: PRODUCT_SRC
       - name: PURCHASE_SRC
       - name: BASE_ORDERS
+      - name: PATIENT_SRC
+      - name: SESSION_SRC
       
