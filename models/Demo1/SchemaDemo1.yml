@@ -28,4 +28,6 @@ sources:
       - name: CUSTOMER_SRC
       - name: SALES_SRC
       - name: PRODUCT_SRC
+      - name: PURCHASE_SRC
+      - name: BASE_ORDERS
       
