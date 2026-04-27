@@ -13,6 +13,11 @@ vars:
    target_db: GlueDB
    target_schema: GlueSchema
    stage_name: GlueDB.GlueSchema.GLUE_S3_STAGE
+   wrk_schema: BRONZE
+   file_format_csv: SCD2_DB.BRONZE.PRODUCT_CSV_FORMAT
+   purge_status: FALSE
+   SCD2_stage_name: SCD2_DB.BRONZE.BRONZE_STAGE
+   rawhist_db: SCD2_DB
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
