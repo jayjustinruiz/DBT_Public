@@ -8,7 +8,3 @@ sources:
         - name: Departments_Raw
         - name: Facts_Raw
         - name: Stores_Raw
-    - name: WalmartSilver
-      database: Walmart_DB
-      schema: SILVER
-      tables:
